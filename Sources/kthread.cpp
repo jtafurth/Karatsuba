@@ -175,27 +175,28 @@ uint KThread::Karatsuba(uint num1, uint num2){
     return 0;
 }
 
+//Thanks to user aStranger of Stack Overflow for this method.
 uint KThread::multiply(unsigned int left, unsigned int right)
 {
-    unsigned long long result = 0; //64 bit result
+    unsigned long long result = 0;
 
-    unsigned int R = right; //32 bit right input
-    unsigned int M = left; //32 bit left input
+    unsigned int R = right;
+    unsigned int M = left;
 
     while (R > 0)
     {
         if (R & 1)
-        {// if Least significant bit exists
-            result += M; //add by shifted left
+        {
+            result += M;
         }
         R >>= 1;
-        M <<= 1; //next bit
+        M <<= 1;
     }
 
 //-- if you want to check for multiplication overflow: --
     if ((result >> 32) != 0)
-    {//if has more than 32 bits
-        return -1; //multiplication overflow
+    {
+        return -1;
     }
 
     return (uint)result;
