@@ -53,5 +53,5 @@ Consoles Outputs:
  Lower Half: decimal representation of the lower binary half of the number.
  Higher Half: decimal representation of the higher binary half of the number.
 
-If the numbers have 2 or more decimal digits, iteration method will be called, which means z0,z1 and z3 have to be computed, this will start another instance of Karutsaba with a slower number until direct multiplication can be made.
+If the numbers have 2 or more decimal digits, iteration method will be called, which means z0,z1 and z3 have to be computed, this will start another instance of Karutsaba with a lower number until direct multiplication can be made.
 
