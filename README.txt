@@ -4,6 +4,8 @@ Author: Juan Camilo Tafurth Zuñiga
 
 Developed in c++ using Qt(http://qt-project.org/) as GUI.
 
+Size in latest commit: 70,8MB.
+
 Description:
 
 Simple program that performs a multiplication using Karatsuba fast multiplication algorithm. Its supports negative, odd, and diferent sized numbers. Fail-safes for non-number strings and very high integers are implemented. When a fail-safe is in effect the result of the multiplication will be 0.
